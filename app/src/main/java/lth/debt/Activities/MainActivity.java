@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
+            toolbar.setNavigationIcon(R.mipmap.toolbar_icon);
         }
 
         viewPager.setAdapter(new SectionPagerAdapter(this,getSupportFragmentManager()));

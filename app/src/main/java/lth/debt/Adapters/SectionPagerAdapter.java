@@ -10,10 +10,10 @@ import android.text.SpannableString;
 import android.text.style.ImageSpan;
 import android.util.Log;
 
-import lth.debt.ActionFragment;
-import lth.debt.DebtFragment;
+import lth.debt.Fragments.ActionFragment;
+import lth.debt.Fragments.DebtFragment;
 import lth.debt.R;
-import lth.debt.SettingsFragment;
+import lth.debt.Fragments.SettingsFragment;
 
 /**
  * Created by Carl on 2015-06-29.
@@ -21,9 +21,9 @@ import lth.debt.SettingsFragment;
 public class SectionPagerAdapter extends FragmentPagerAdapter {
     private Context context;
     private int[] imageResId = {
-            R.mipmap.test_1,
-            R.mipmap.test_1,
-            R.mipmap.test_1
+            R.drawable.ic_credit_card,
+            R.drawable.ic_add_group,
+            R.drawable.ic_settings_menu
     };
 
     private String[] titles = {
@@ -60,7 +60,7 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         Drawable image = context.getDrawable(imageResId[position]);
-        image.setBounds(0, 0, image.getIntrinsicWidth()-44, image.getIntrinsicHeight()-44);
+        image.setBounds(0, 0, image.getIntrinsicWidth()+44, image.getIntrinsicHeight()+44);
         Log.d("h", String.valueOf(image.getIntrinsicHeight()));
         SpannableString sb = new SpannableString(" ");
         ImageSpan imageSpan = new ImageSpan(image);

@@ -1,10 +1,12 @@
-package lth.debt;
+package lth.debt.Fragments;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import lth.debt.R;
 
 /**
  * Created by Carl on 2015-06-29.
