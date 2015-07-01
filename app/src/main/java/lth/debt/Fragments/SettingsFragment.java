@@ -12,6 +12,14 @@ import lth.debt.R;
  * Created by Carl on 2015-06-29.
  */
 public class SettingsFragment extends Fragment {
+
+
+    public static SettingsFragment newInstance() {
+        SettingsFragment fragment = new SettingsFragment();
+        return fragment;
+    }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

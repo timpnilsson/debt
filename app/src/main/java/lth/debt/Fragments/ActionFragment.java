@@ -13,6 +13,10 @@ import lth.debt.R;
  */
 public class ActionFragment extends Fragment {
 
+    public static ActionFragment newInstance(FirstPageFragmentListener listener) {
+        ActionFragment fragment = new ActionFragment();
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -20,4 +24,7 @@ public class ActionFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.action_fragment, container, false);
     }
+
+
+
 }
